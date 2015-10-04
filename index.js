@@ -5,13 +5,14 @@ module.exports = function (str, opts) {
   var revHash = require('rev-hash');
 
   var inputFilename = str;
-  var outputFilename = opts.o || 'cstimer.json';
 
   if (opts.verbose || opts.v || opts.verbose) {
     log.level = 'verbose';
   }
 
-  var sessionName = 'session' + (opts.session || 5);
+  var sessionName = 'session' + (opts.session || 1);
+
+  var outputFilename = opts.o || 'cstimer.txt';
 
   log.verbose('inputFileName', inputFilename);
   log.verbose('outputFilename', outputFilename);
