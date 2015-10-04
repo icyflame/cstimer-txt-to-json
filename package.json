@@ -32,6 +32,8 @@
   "dependencies": {
     "chalk": "^1.1.1",
     "eslint": "^0.24.1",
+    "eslint-config-standard-react": "^1.1.0",
+    "eslint-plugin-react": "^3.5.1",
     "meow": "^3.3.0",
     "npmlog": "^1.2.1",
     "rev-hash": "^1.0.0",
