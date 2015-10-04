@@ -1,7 +1,7 @@
 {
   "name": "cstimer-txt-to-json",
   "version": "0.0.0",
-  "description": "My gnarly module",
+  "description": "Convert csTimer text export to csTimer import format",
   "license": "MIT",
   "repository": "icyflame/cstimer-txt-to-json",
   "author": {
@@ -23,8 +23,12 @@
   "keywords": [
     "cli-app",
     "cli",
-    ""
+    "cubing",
+    "speedcubing",
+    "timer",
+    "cstimer"
   ],
+  "preferGlobal": true,
   "dependencies": {
     "chalk": "^1.1.1",
     "eslint": "^0.24.1",

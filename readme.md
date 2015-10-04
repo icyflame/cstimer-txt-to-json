@@ -1,6 +1,8 @@
 # cstimer-txt-to-json
 
-> My gnarly module
+> Convert csTimer text export to csTimer import format
+
+TL; DR This module will convert  [this](https://gist.github.com/icyflame/c81780abc2936f8a157f/raw/dc17844a7309778eed3d6fdb2f4c01bfb0c576ca/cstimer-original.txt) to [this](https://gist.githubusercontent.com/icyflame/c81780abc2936f8a157f/raw/dc17844a7309778eed3d6fdb2f4c01bfb0c576ca/corrected-csTimer-import.txt)
 
 [![Build Status](https://travis-ci.org/icyflame/cstimer-txt-to-json.svg?branch=master)](https://travis-ci.org/icyflame/cstimer-txt-to-json)
 
@@ -9,17 +11,7 @@
 ## Install
 
 ```
-$ npm install --save cstimer-txt-to-json
-```
-
-
-## Usage
-
-```js
-var cstimerTxtToJson = require('cstimer-txt-to-json');
-
-cstimerTxtToJson('unicorns');
-//=> unicorns & rainbows
+$ npm install --global cstimer-txt-to-json
 ```
 
 
@@ -32,39 +24,15 @@ $ npm install --global cstimer-txt-to-json
 $ cstimer-txt-to-json --help
 
   Usage
-    cstimer-txt-to-json [input]
+    $ cstimer-txt-to-json [input] -o [output-file-name] --session sessionNumber --verbose
 
-  Example
-    cstimer-txt-to-json
-    unicorns & rainbows
-
-    cstimer-txt-to-json ponies
-    ponies & rainbows
-
+  Examples
+    $ cstimer-txt-to-json exportedTime.txt -o cstimer.txt
   Options
-    --foo  Lorem ipsum. Default: false
+    -o         Output file name.                         Default: cstimer.txt
+    --session  Session number of csTimer to import into. Default: 1
+    --verbose  To print debug output as well.            Default: false
 ```
-
-
-## API
-
-### cstimerTxtToJson(input, [options])
-
-#### input
-
-*Required*  
-Type: `string`
-
-Lorem ipsum.
-
-#### options
-
-##### foo
-
-Type: `boolean`  
-Default: `false`
-
-Lorem ipsum.
 
 
 ## License
