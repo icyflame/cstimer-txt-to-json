@@ -20,4 +20,4 @@ var cli = meow({
   ]
 });
 
-console.log(cstimerTxtToJson(cli.input[0] || 'unicorns'));
+cstimerTxtToJson(cli.input[0], cli.flags);

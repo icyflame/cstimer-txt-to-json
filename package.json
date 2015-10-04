@@ -26,7 +26,12 @@
     ""
   ],
   "dependencies": {
-    "meow": "^3.3.0"
+    "chalk": "^1.1.1",
+    "eslint": "^0.24.1",
+    "meow": "^3.3.0",
+    "npmlog": "^1.2.1",
+    "rev-hash": "^1.0.0",
+    "write-json-file": "^1.1.1"
   },
   "devDependencies": {
     "mocha": "*",
